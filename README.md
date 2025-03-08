@@ -22,13 +22,40 @@ Clone the repository.
 %cd Optimized_TumorClassifierResNetSD
 ```
 
-## preprocess
+
+## Option1: Download and Preprocess the dataset
+If you want to download the dataset and perform the preprocessing yourself, you can use the following code.<br/>
+The first command will download the dataset from Google Drive, and the second one will process the data into the required format.<br/>
+```
+!python download_dataset.py
+```
 ```
 !python preprocess.py \
         --train_dir Brain_Tumor_MRI_Dataset/Training \
         --test_dir Brain_Tumor_MRI_Dataset/Testing \
         --output_dir outputs/data
+
 ```
+
+## Option2: Use preprocessed files
+If you prefer to use the preprocessed files without running the preprocessing step, you can download the preprocessed files (train_data.pt, val_data.pt, and test_data.pt) using the following code.<br/>
+Once the preprocessed files are downloaded, you can move directly to training the model.<br/>
+```
+!python download_preprocessed_data.py
+```
+
+## Dataset
+Finally, the structure of the 'data' folder where the preprocessed files are placed is as follows.<br/>
+```
+/outputs/data
+├── test_label.pt
+├── test_data.pt
+├── train_label.pt
+├── train_data.pt
+├── test_label.pt
+├── test_data.pt
+```  
+
 
 
 ## Train
