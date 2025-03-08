@@ -15,7 +15,6 @@ This is the official <strong>Optimizied_TumorClassifierResNetSD</strong> impleme
 </p>
 
 ## Setup
-
 Clone the repository.
 
 ```
@@ -24,39 +23,38 @@ Clone the repository.
 ```
 
 ## preprocess
-
-
 ```
 !python preprocess.py \
-  --train_dir Brain_Tumor_MRI_Dataset/Training \
-  --test_dir Brain_Tumor_MRI_Dataset/Testing \
-  --output_dir outputs/data
+        --train_dir Brain_Tumor_MRI_Dataset/Training \
+        --test_dir Brain_Tumor_MRI_Dataset/Testing \
+        --output_dir outputs/data
 ```
 
 
 ## Train
-
 Train Optimizied_TumorClassifierResNetSD.
 <br/>
 You can modify the values of the input parameters as per your requirements. Alternatively, you can run the script with the default settings without changing any parameters.
 ```
-!python train.py --model_name "resnet_sd" \
-                 --checkpoint_name "model_resnet_sd" \
-                 --train_data_path "outputs/data/train_data.pt" \
-                 --train_labels_path "outputs/data/train_labels.pt" \
-                 --val_data_path "outputs/data/val_data.pt" \
-                 --val_labels_path "outputs/data/val_labels.pt" \
-                 --num_epochs 200 \
-                 --lr 0.01 \
-                 --stochastic_depth1 0.6 \
-                 --stochastic_depth2 0.7 \
+!python train.py \
+        --model_name "resnet_sd" \
+        --checkpoint_name "model_resnet_sd" \
+        --train_data_path "outputs/data/train_data.pt" \
+        --train_labels_path "outputs/data/train_labels.pt" \
+        --val_data_path "outputs/data/val_data.pt" \
+        --val_labels_path "outputs/data/val_labels.pt" \
+        --num_epochs 200 \
+        --lr 0.01 \
+        --stochastic_depth1 0.6 \
+        --stochastic_depth2 0.7 \
 
 ```
 ## Test
 
 ```
-!python test.py --model_name "resnet_sd" \
-                 --checkpoint_name "model_resnet_sd" \
-                 --test_data_path "outputs/data/test_data.pt" \
-                 --test_labels_path "outputs/data/test_labels.pt" 
+!python test.py \
+        --model_name "resnet_sd" \
+        --checkpoint_name "model_resnet_sd" \
+        --test_data_path "outputs/data/test_data.pt" \
+        --test_labels_path "outputs/data/test_labels.pt" 
 ```
