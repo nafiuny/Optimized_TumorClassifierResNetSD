@@ -21,8 +21,9 @@ Clone the repository.
 !git clone https://https://github.com/nafiuny/Optimized_TumorClassifierResNetSD.git
 %cd Optimized_TumorClassifierResNetSD
 ```
-
-
+<br/>
+<br/>
+<br/>
 ## Option1: Download and Preprocess the dataset
 If you want to download the dataset and perform the preprocessing yourself, you can use the following code.<br/>
 The first command will download the dataset from Google Drive, and the second one will process the data into the required format.<br/>
@@ -36,14 +37,18 @@ The first command will download the dataset from Google Drive, and the second on
         --output_dir outputs/data
 
 ```
-
+<br/>
+<br/>
+<br/>
 ## Option2: Use preprocessed files
 If you prefer to use the preprocessed files without running the preprocessing step, you can download the preprocessed files (train_data.pt, val_data.pt, and test_data.pt) using the following code.<br/>
 Once the preprocessed files are downloaded, you can move directly to training the model.<br/>
 ```
 !python download_preprocessed_data.py
 ```
-
+<br/>
+<br/>
+<br/>
 ## Dataset
 Finally, the structure of the 'data' folder where the preprocessed files are placed is as follows.<br/>
 ```
@@ -55,9 +60,9 @@ Finally, the structure of the 'data' folder where the preprocessed files are pla
 ├── test_label.pt
 ├── test_data.pt
 ```  
-
-
-
+<br/>
+<br/>
+<br/>
 ## Train
 Train Optimizied_TumorClassifierResNetSD.
 <br/>
@@ -76,8 +81,12 @@ You can modify the values of the input parameters as per your requirements. Alte
         --stochastic_depth2 0.7 \
 
 ```
+<br/>
+<br/>
+<br/>
 ## Test
-
+In the following command, enter the name of the checkpoint specified in the previous step and run it.
+In the following command, enter the name of the checkpoint specified in the train step and run it.
 ```
 !python test.py \
         --model_name "resnet_sd" \
@@ -85,3 +94,16 @@ You can modify the values of the input parameters as per your requirements. Alte
         --test_data_path "outputs/data/test_data.pt" \
         --test_labels_path "outputs/data/test_labels.pt" 
 ```
+<br/>
+<br/>
+<br/>
+## plot 
+Run the following code to display the confusion matrix.
+```
+from IPython.display import Image, display
+print("Displaying plots:")
+display(Image("outputs/plots/confusion_matrix_resnet_sd.png"))
+```
+<br/>
+<br/>
+<br/>
