@@ -37,6 +37,7 @@ Clone the repository.
 ## Train
 
 Train Optimizied_TumorClassifierResNetSD
+You can modify the values of the input parameters as per your requirements. Alternatively, you can run the script with the default settings without changing any parameters.
 ```
 !python train.py --model_name "resnet_sd" \
                  --checkpoint_name "model_resnet_sd" \
