@@ -1,4 +1,4 @@
-# Optimizied_TumorClassifierResNetSD
+# Optimized_TumorClassifierResNetSD
 A Novel Optimized ResNet-SD Model for Brain Tumor Classification Using Stochastic Depth and Metaheuristic Optimization
 
 
@@ -36,7 +36,8 @@ Clone the repository.
 
 ## Train
 
-Train Optimizied_TumorClassifierResNetSD
+Train Optimizied_TumorClassifierResNetSD.
+<br/>
 You can modify the values of the input parameters as per your requirements. Alternatively, you can run the script with the default settings without changing any parameters.
 ```
 !python train.py --model_name "resnet_sd" \
@@ -51,4 +52,11 @@ You can modify the values of the input parameters as per your requirements. Alte
                  --stochastic_depth2 0.7 \
 
 ```
+## Test
 
+```
+!python test.py --model_name "resnet_sd" \
+                 --checkpoint_name "model_resnet_sd" \
+                 --test_data_path "outputs/data/test_data.pt" \
+                 --test_labels_path "outputs/data/test_labels.pt" 
+```
