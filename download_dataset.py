@@ -3,25 +3,19 @@ import gdown
 
 
 file_urls = [
-    "https://drive.google.com/uc?id=FILE_ID_1",  # لینک فایل 1
-    "https://drive.google.com/uc?id=FILE_ID_2",  # لینک فایل 2
-    "https://drive.google.com/uc?id=FILE_ID_3"   # لینک فایل 3
+    "test_data.pt":   "https://drive.google.com/file/d/1_1bBU9HdHkXWVlFf3_6XKM-b91soBkzY/view?usp=sharing", 
+    "train_data.pt":  "hhttps://drive.google.com/file/d/1FX6hqOOOT9ecEf2bZtISZmEz9Xg096EG/view?usp=sharing", 
+    "val_data.pt":    "https://drive.google.com/file/d/17vkZUrEnC17XBJRtuMPTGM32jUZlyggv/view?usp=sharing"    
 ]
 
-# پوشه مقصد برای ذخیره‌سازی
-output_dir = './data'
+output_dir = 'outputs/data'
 
-# اگر پوشه مقصد وجود ندارد، آن را ایجاد می‌کنیم
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
-# دانلود فایل‌ها
-for url in file_urls:
-    # نام فایل را از URL استخراج می‌کنیم
-    file_name = url.split('=')[-1] + '.zip'  # یا فرمت صحیح فایل شما
+# دانلود هر فایل
+for file_name, url in file_urls.items():
     output_path = os.path.join(output_dir, file_name)
-    
-    # دانلود فایل
     print(f"Downloading {file_name}...")
     gdown.download(url, output_path, quiet=False)
 
