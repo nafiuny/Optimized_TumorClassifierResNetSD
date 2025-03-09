@@ -106,7 +106,7 @@ def evaluate_model(model_name, checkpoint_path, test_data_path, test_labels_path
     plot_path = os.path.join("outputs/plots", "confusion_matrix_{model_name}.png")
     plt.savefig(plot_path)
     
-    print("Confusion Matrix saved at: outputs/plots/confusion_matrix_{model_name}.png")
+    print(f"Confusion Matrix saved at: outputs/plots/confusion_matrix_{model_name}.png")
 
     
 
