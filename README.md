@@ -106,7 +106,7 @@ print("Displaying plots:")
 display(Image("outputs/plots/confusion_matrix_resnet_sd.png"))
 ```
 
-Run the following code to show the train history Loss and Accuracty.
+Run the following code to show the Train and Validation Loss and Accuracty history .
 ```
 !python plot_history.py --checkpoint_path="outputs/models/model_resnet_sd.pth"
 ```
