@@ -3,7 +3,7 @@ A Novel Optimized ResNet-SD Model for Brain Tumor Classification Using Stochasti
 
 
 <p align="justify">
-This is the official <strong>Optimizied_TumorClassifierResNetSD</strong> implementation repository with PyTorch.<br/><br/>
+This is the official <strong>Optimized TumorClassifierResNetSD </strong> implementation repository with PyTorch.<br/><br/>
 
 </p>
 <p align="center">
