@@ -16,7 +16,7 @@ import seaborn as sns
 from IPython.display import Image
 from sklearn.metrics import precision_score, recall_score, f1_score
 
-from models import TumorClassifierResNet, TumorClassifierResNetSD
+from models import TumorClassifierResNetSD
 
 def get_model(model_name, num_classes):
     # if model_name == "resnet":
