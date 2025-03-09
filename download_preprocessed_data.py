@@ -2,11 +2,11 @@ import os
 import gdown
 
 
-file_urls = [
+file_urls = {
     "test_data.pt":   "https://drive.google.com/file/d/1_1bBU9HdHkXWVlFf3_6XKM-b91soBkzY/view?usp=sharing", 
     "train_data.pt":  "hhttps://drive.google.com/file/d/1FX6hqOOOT9ecEf2bZtISZmEz9Xg096EG/view?usp=sharing", 
     "val_data.pt":    "https://drive.google.com/file/d/17vkZUrEnC17XBJRtuMPTGM32jUZlyggv/view?usp=sharing"    
-]
+}
 
 output_dir = 'outputs/data'
 
