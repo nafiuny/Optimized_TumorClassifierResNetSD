@@ -1,16 +1,10 @@
 import os
 import gdown
 
-
-# file_urls = {
-#     "test_data.pt":   "https://drive.google.com/uc?id=1_1bBU9HdHkXWVlFf3_6XKM-b91soBkzY", 
-#     "train_data.pt":  "hhttps://drive.google.com/uc?id=1FX6hqOOOT9ecEf2bZtISZmEz9Xg096EG", 
-#     "val_data.pt":    "https://drive.google.com/uc?id=17vkZUrEnC17XBJRtuMPTGM32jUZlyggv"    
-# }
 file_urls = {
-    "test_data.pt":   "https://drive.google.com/uc?id=1YRl08ewX8sdEFhGQNpHiVVHF3wBpzVfS",
-    "train_data.pt":  "hhttps://drive.google.com/uc?id=1YQ5yAiGCKmxPuO19Aif3ai_AEEnAQ-4a",
-    "val_data.pt":    "https://drive.google.com/uc?id=1YQYhxs90jMBSQiDPnhsQ7t17RfV0JCSC" 
+    "test_data.pt":   "https://drive.google.com/uc?id=1-Hd8VBM906w_CHLkW13TY0zEy_v6eSOR",
+    "train_data.pt":  "https://drive.google.com/uc?id=1YQ5yAiGCKmxPuO19Aif3ai_AEEnAQ-4a",
+    "val_data.pt":    "https://drive.google.com/uc?id=1-XycI_M-QuCHtp42ztP3Xal5bE4S4NNP" 
 }
 
 output_dir = 'outputs/data'
