@@ -90,9 +90,8 @@ You can modify the values of the input parameters as per your requirements. Alte
 In the following command, enter the name of the checkpoint specified in the previous step and run it.
 In the following command, enter the name of the checkpoint specified in the train step and run it.
 ```
-!python test.py \
-        --model_name "resnet_sd" \
-        --checkpoint_name "model_resnet_sd" \
+!python test.py --model_name "resnet_sd" \
+        --checkpoint_path "outputs/models/model_resnet_sd.pth" \
         --test_data_path "outputs/data/test_data.pt" \
         --test_labels_path "outputs/data/test_labels.pt" 
 ```
