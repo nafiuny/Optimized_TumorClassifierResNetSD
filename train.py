@@ -45,6 +45,7 @@ def train_model(model_name, checkpoint_name,
 
     history = {"train_loss": [], "val_loss": [], "train_acc": [], "val_acc": []}
     best_val_acc = 0.0
+    start_epoch = 0
     
     checkpoint_path = f"outputs/models/{checkpoint_name}.pth"
 
