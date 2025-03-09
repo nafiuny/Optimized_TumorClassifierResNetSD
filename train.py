@@ -7,11 +7,9 @@ import os
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
-from models import TumorClassifierResNet, TumorClassifierResNetSD
+from models import TumorClassifierResNetSD
 
-def get_model(model_name, num_classes):
-    # if model_name == "resnet":
-    #     return TumorClassifierResNet(num_classes=num_classes)
+def get_model(model_name, num_classes, stochastic_depth1, stochastic_depth2):
     if model_name == "resnet_sd":
         return TumorClassifierResNetSD(num_classes=num_classes)
     
@@ -24,7 +22,7 @@ def train_model(model_name, checkpoint_name,
                 num_epochs, lr, batch_size, 
                 stochastic_depth1, stochastic_depth2):
 
-    model = get_model(model_name, num_classes=4, 
+    model = get_model(model_name=model_name, num_classes=4, 
                       stochastic_depth1=stochastic_depth1, 
                       stochastic_depth2=stochastic_depth2)
     
@@ -116,7 +114,7 @@ def train_model(model_name, checkpoint_name,
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model_name', type=str, required=True, help='Name of the model (e.g., cnn)')
+    parser.add_argument('--model_name', type=str, required=True, help='Name of the model (resnet_sd)')
     parser.add_argument('--checkpoint_name', type=str, required=True, help='Name of the checkpoint file to save')
     parser.add_argument('--train_data_path', type=str, required=True, help='Path to training data tensor')
     parser.add_argument('--train_labels_path', type=str, required=True, help='Path to training labels tensor')
