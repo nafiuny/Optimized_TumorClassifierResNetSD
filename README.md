@@ -87,7 +87,6 @@ You can modify the values of the input parameters as per your requirements. Alte
 
 
 ## Test
-In the following command, enter the name of the checkpoint specified in the previous step and run it.
 In the following command, enter the name of the checkpoint specified in the train step and run it.
 ```
 !python test.py --model_name "resnet_sd" \
@@ -96,6 +95,12 @@ In the following command, enter the name of the checkpoint specified in the trai
         --test_labels_path "outputs/data/test_labels.pt" 
 ```
 
+
+## Best Model
+To use the best trained model, run the following command.
+```
+!python download_best_model_resnet_sd.py
+```
 
 
 ## plot 
