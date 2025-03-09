@@ -19,7 +19,12 @@ Clone the repository.
 
 ```
 !git clone https://github.com/nafiuny/Optimized_TumorClassifierResNetSD.git
+```
+```
 %cd Optimized_TumorClassifierResNetSD
+```
+```
+!pip install -r requirements.txt
 ```
 
 ## Option1: Download and Preprocess the dataset
