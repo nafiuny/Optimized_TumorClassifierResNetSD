@@ -66,8 +66,7 @@ Train Optimizied_TumorClassifierResNetSD.
 <br/>
 You can modify the values of the input parameters as per your requirements. Alternatively, you can run the script with the default settings without changing any parameters.
 ```
-!python train.py \
-        --model_name "resnet_sd" \
+!python train.py --model_name "resnet_sd" \
         --checkpoint_name "model_resnet_sd" \
         --train_data_path "outputs/data/train_data.pt" \
         --train_labels_path "outputs/data/train_labels.pt" \
@@ -76,7 +75,7 @@ You can modify the values of the input parameters as per your requirements. Alte
         --num_epochs 200 \
         --lr 0.01 \
         --stochastic_depth1 0.6 \
-        --stochastic_depth2 0.7 \
+        --stochastic_depth2 0.7 
 
 ```
 
