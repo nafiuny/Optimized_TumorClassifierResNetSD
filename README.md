@@ -18,7 +18,7 @@ This is the official <strong>Optimizied_TumorClassifierResNetSD</strong> impleme
 Clone the repository.
 
 ```
-!git clone https://https://github.com/nafiuny/Optimized_TumorClassifierResNetSD.git
+!git clone https://github.com/nafiuny/Optimized_TumorClassifierResNetSD.git
 %cd Optimized_TumorClassifierResNetSD
 ```
 
