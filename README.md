@@ -1,5 +1,7 @@
 # Optimized_TumorClassifierResNetSD
-A Novel Optimized ResNet-SD Model for Brain Tumor Classification Using Stochastic Depth and Metaheuristic Optimization
+A Novel Optimized ResNet-SD Model for Brain Tumor Classification Using Stochastic Depth and Metaheuristic Optimization.
+<br><br>
+This repository contains code for a deep learning model that detects brain tumors in MRI images. The model is implemented using the ResNet-50 architecture, optimized with stochastic depth and metaheuristics, and trained on a dataset of 5712 images, including the Glioma, Meningioma, Pituitary, and Normal classes.
 
 
 <p align="justify">
